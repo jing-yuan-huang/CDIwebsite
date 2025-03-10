@@ -1,0 +1,569 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Center for Data Intelligence</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+		<!-- <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript> -->
+	</head>
+
+	<body>
+    <div class="navbar">
+
+      <button class="menu-toggle" ><i class="bi bi-list"></i></button> 
+      <div class ="menu-item">
+        <div class="double-line"></div>
+        <div class="link">
+          <div onclick="changeContent('frontpage')"><a href="#frontpage">首頁</a></div>
+          <div onclick="changeContent('introduction')"><a href="#introduction">中心簡介</a></div>
+          <div onclick="changeContent('members')"><a href="#members">中心成員</a></div>
+          <div onclick="changeContent('technology')"><a href="#technology">技術研發</a></div>
+          <div onclick="changeContent('strategy')"><a href="#strategy">推動策略</a></div>
+          <div onclick="changeContent('contact')"><a href="#contact">聯絡我們</a></div>
+        </div>
+        <div class="double-line"></div>
+        <button class="close-menu"><i class="bi bi-x"></i></button> 
+      </div>
+      
+    </div>
+
+    <div class="body display-block" id="frontpage" style=" width: 100%; padding: 0;">
+      <div class="header">
+        <div class="title">
+          <div id="zh">
+            數據智慧與系統研究中心
+          </div>
+  
+          <div id="double-line"></div>
+  
+          <div id="en">
+            Center for Data Intelligence: Technologies, Applications, and Systems
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+
+    <div class="body display-none" id="introduction">
+      <h1>
+        中心簡介
+      </h1>
+
+      <div class="tab">
+        <a href="#goal">中心目標</a>
+        <a href="#member">中心成員</a>
+        <a href="#task">中心任務</a>
+      </div>
+
+      <div class="content"id="goal">
+        <div>
+          <h2>
+            中心目標
+          </h2>
+  
+          <p>
+            建立一個具國際聲望之人工智慧研究中心，提升我國在此領域之話語權、能見度及競爭利基。
+          </p>
+        </div>
+      </div>
+
+      <div class="content"id="member">
+        <div>
+          <h2>
+            中心成員
+          </h2>
+  
+          <p>
+            本中心計畫成員包含台大在數據智慧與系統領域的28位頂尖研究人員，其中有3位 ACM Fellows (全台灣僅有五位）、7位 IEEE Fellows、2位教育部國家講座得主、3位教育部學術獎得主、10位國科會傑出研究獎得主及10位國科會吳大猷獎得主。
+          </p>
+        </div>
+      </div>
+
+      <div class="content"id="task">
+        <div>
+          <h2>
+            中心任務
+          </h2>
+    
+          <li>
+            成為台灣人工智慧研究的旗艦
+          </li>
+  
+          <li>
+            作為台灣產業與政府之智庫
+          </li>
+  
+          <li>
+            培育優秀及領袖級的人才
+          </li>
+          
+          <li>
+            奠定國家未來學術與產業的實力
+          </li>
+        </div>
+      </div>
+    </div>
+
+    <div class="body display-none" id="members">
+      <h1>
+        中心成員
+      </h1>
+      
+      <div class="members">
+        <div class="member-row">
+          <div class="group">
+            <div class="highlight">
+              主持人
+            </div>
+            
+            <div class="list flex">
+              <div class="profile">
+                <a href="http://arbor.ee.ntu.edu.tw/~mschen/" target="_blank"><img src="images/members/cmx.png"></a>
+                陳銘憲
+              </div>
+            </div>
+          </div>
+  
+          <div class="group">
+            <div class="highlight">
+              共同主持人
+            </div>
+            
+            <div class="list flex">
+              <div class="profile">
+                <a href="https://www.csie.ntu.edu.tw/~cyy/" target="_blank"><img src="images/members/cyy.png"></a>
+                莊永裕
+              </div>
+  
+              <div class="profile">
+                <a href="http://nlg.csie.ntu.edu.tw/advisor.php" target="_blank"><img src="images/members/chh.png"></a>
+                陳信希
+              </div>
+  
+              <div class="profile">
+                <a href="https://www.csie.ntu.edu.tw/~hung/index.html#abouttarget" target="_blank"><img src="images/members/hyp.png"></a>
+                洪一平
+              </div>
+  
+              <div class="profile">
+                <a href="https://www.csie.ntu.edu.tw/~ktw/" target="_blank"><img src="images/members/kdw.png"></a>
+                郭大維
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="member-tab" id="member-tab">
+          <div class="selected" onclick="changeMembers('first-members')" id="first-members">
+            <div class="highlight">
+              子計畫一
+            </div>
+          </div>
+
+          <div onclick="changeMembers('second-members')" id="second-members">
+            <div>
+              子計畫二
+            </div>
+          </div>
+
+          <div onclick="changeMembers('third-members')" id="third-members">
+            <div>
+              子計畫三
+            </div>
+          </div>
+        </div>
+
+        <div class="member-row display-show" id="first-members">
+          <div class="group">
+            <div class="title">
+              計畫名稱：可信賴的智慧學習與人本計算
+            </div>
+  
+            <div class="list">
+              <div class="profile">
+                <a href="http://nlg.csie.ntu.edu.tw/advisor.php" target="_blank"><img src="images/members/chh.png"></a>
+                主持人：陳信希
+              </div>
+  
+              <div class="profile">
+                <a href="https://www.csie.ntu.edu.tw/~cjlin/" target="_blank"><img src="images/members/lcj.png"></a>
+                林智仁
+              </div>
+  
+              <div class="profile">
+                <a href="http://mirlab.org/jang/" target="_blank"><img src="images/members/jsj.png"></a>
+                張智星
+              </div>
+  
+              <div class="profile">
+                <a href="https://www.csie.ntu.edu.tw/~sdlin/" target="_blank"><img src="images/members/lsd.png"></a>
+                林守德
+              </div>
+  
+              <div class="profile">
+                <a href="https://www.csie.ntu.edu.tw/~htlin/" target="_blank"><img src="images/members/lxt.png"></a>
+                林軒田
+              </div>
+            </div>
+
+            <div class="list">
+              <div class="profile">
+                <a href="https://www.ee.ntu.edu.tw/profile1.php?id=102002" target="_blank"><img src="images/members/wyx.png"></a>
+                王奕翔
+              </div>
+  
+              <div class="profile">
+                <a href="https://www.ee.ntu.edu.tw/profile1.php?id=1020908" target="_blank"><img src="images/members/lhy.png"></a>
+                李宏毅
+              </div>
+  
+              <div class="profile">
+                <a href="https://www.csie.ntu.edu.tw/~hchsiao/" target="_blank"><img src="images/members/hhc.png"></a>
+                蕭旭君
+              </div>
+  
+              <div class="profile">
+                <a href="https://www.csie.ntu.edu.tw/~yvchen/" target="_blank"><img src="images/members/cun.png"></a>
+                陳縕儂
+              </div>
+  
+              <div class="profile">
+                <a href="http://www.ee.ntu.edu.tw/profile1.php?id=1060803" target="_blank"><img src="images/members/wpy.png"></a>
+                吳沛遠
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="member-row display-none" id="second-members">
+          <div class="group">
+            <div class="title">
+              計畫名稱：多模態感知計算與互動實境
+            </div>
+  
+            <div class="list">
+              <div class="profile">
+               <a href="https://www.csie.ntu.edu.tw/~hung/index.html#abouttarget" target="_blank"><img src="images/members/hyp.png"></a>
+                主持人：洪一平
+              </div>
+  
+              <div class="profile">
+                <a href="https://www.ee.ntu.edu.tw/profile1.php?id=60" target="_blank"><img src="images/members/chm.png"></a>
+                陳宏銘
+              </div>
+  
+              <div class="profile">
+                <a href="https://www.cmlab.csie.ntu.edu.tw/cml/dsp/prof-wu/prof-wu.html" target="_blank"><img src="images/members/wjl.png"></a>
+                吳家麟
+              </div>
+  
+              <div class="profile">
+              <a href="https://graphics.cmlab.csie.ntu.edu.tw/~robin/" target="_blank"><img src="images/members/cby.png"></a>
+                陳炳宇
+              </div>
+  
+              <div class="profile">
+              <a href="https://www.csie.ntu.edu.tw/~cyy/" target="_blank"><img src="images/members/cyy.png"></a>
+                莊永裕
+              </div>
+            </div>
+
+            <div class="list">
+              <div class="profile">
+               <a href="https://winstonhsu.info/" target="_blank"><img src="images/members/hhm.png"></a>
+               徐宏民
+              </div>
+  
+              <div class="profile">
+                <a href="https://mikechen.com/" target="_blank"><img src="images/members/cmike.png"></a>
+                陳彥仰
+              </div>
+  
+              <div class="profile">
+                <a href="https://www.ee.ntu.edu.tw/profile1.php?id=1060727" target="_blank"><img src="images/members/wyc.png"></a>
+                王鈺強
+              </div>
+  
+              <div class="profile">
+                <a href="https://www.lungpancheng.tw/" target="_blank"><img src="images/members/clp.png"></a>
+                鄭龍磻
+              </div>
+  
+            </div>
+          </div>
+        </div>
+
+        <div class="member-row display-none" id="third-members">
+          <div class="group">
+            <div class="title">
+              計畫名稱：邊緣智慧之高效量子計算系統
+            </div>
+  
+            <div class="list">
+              <div class="profile">
+                <a href="https://www.csie.ntu.edu.tw/~ktw/" target="_blank"><img src="images/members/kdw.png"></a>
+                主持人：郭大維
+              </div>
+  
+              <div class="profile">
+                <a href="https://www.csie.ntu.edu.tw/~acpang/" target="_blank"><img src="images/members/pic.png"></a>
+                逄愛君
+              </div>
+  
+              <div class="profile">
+                <a href="https://www.ee.ntu.edu.tw/profile1.php?id=66" target="_blank"><img src="images/members/lwc.png"></a>
+                廖婉君
+              </div>
+  
+              <div class="profile">
+                <a href="https://www.csie.ntu.edu.tw/~hungsh/" target="_blank"><img src="images/members/hsh.png"></a>
+                洪士灝
+              </div>
+  
+              <div class="profile">
+                <a href="https://newslabntu.github.io/DanielFolio/" target="_blank"><img src="images/members/scs.png"></a>
+                施吉昇
+              </div>
+            </div>
+
+            <div class="list">
+              <div class="profile">
+                <a href="https://www.ee.ntu.edu.tw/profile1.php?id=678" target="_blank"><img src="images/members/cjh.png"></a>
+                江介宏
+              </div>
+  
+              <div class="profile">
+                <a href="https://www.ee.ntu.edu.tw/profile1.php?id=101123" target="_blank"><img src="images/members/ljs.png"></a>
+                李峻霣
+              </div>
+  
+              <div class="profile">
+                <a href="https://www.csie.ntu.edu.tw/~stchen/" target="_blank"><img src="images/members/csj.png"></a>
+                陳尚澤
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="body display-none" id="technology">
+
+        <h1>
+          技術研發
+        </h1>
+  
+        <div class="tab">
+          <a href="#aimodel">人工智慧模型偏見和弱點自動檢測與修復</a>
+          <a href="#muti">多模態智慧模型之自監督式學習與人本互動</a>
+          <a href="#app">以應用為導向之低延遲高效邊緣智慧系統</a>
+        </div>
+  
+        <div class="content" id="aimodel">
+          <div>
+            <h2>
+              人工智慧模型偏見和弱點自動檢測與修復
+            </h2>
+    
+            <li>
+              大型基礎模型可能含有偏見、不當信息或惡意數據，然而人工提問檢測的範圍十分有限
+            </li>
+            <li>
+              開發自動檢測與修補這類大型語言模型的技術，確保其安全性和可靠性，通過少量的訓練資料精準有效地修正模型問題，為目前生成式人工智慧最重要之技術挑戰
+            </li>
+          </div>
+          
+            <img src="images/test.png" alt="">
+        </div>
+  
+        <div class="content" id="muti">
+          <div>
+            <h2>
+              多模態智慧模型之自監督式學習與人本互動
+            </h2>
+    
+            <li>
+              現有多模態基礎模型以視覺與語言為主，然而將語音、聲音、三維資料等其他模態資料列入整合，尚有許多技術挑戰
+            </li>
+            <li>
+              開發對未成對、未有標註之跨模態資料進行有效率的自監督式學習
+            </li>
+            <li>
+              對於說話者的情緒等非文字資訊進行理解，以提供更優質且高度適性化的用戶互動體驗
+            </li>
+            <li>
+              多模人本互動為許多人工智慧新興應用(如元宇宙互動、電影、遊戲)之關鍵技術
+            </li>
+          </div>
+          <img src="images/test2.png" alt="">
+        </div>
+  
+        <div class="content" id="app">
+          <div>
+            <h2>
+              以應用為導向之低延遲高效邊緣智慧系統
+            </h2>
+      
+            <li>
+              邊緣系統三大面向: 運算/儲存/傳輸
+            </li>
+    
+            <li>
+              台灣在系統軟體產業的新契機 : 儲存系統佔伺服器產業逾1/3產值
+            </li>
+    
+            <li>
+              發展超低延遲儲存系統技術，將部分計算移到接近儲存裝置的位置，節省資料搬移，實現 In-Memory Computing
+            </li>
+            
+            <li>
+              實現計算與記憶體整合之新AI Computing
+            </li>
+          </div>
+          <img src="images/test3.png" alt="">
+        </div>
+    </div>
+
+    <div class="body display-none" id="strategy">
+      <h1>
+        推動策略
+      </h1>
+
+      <div class="tab">
+        <a href="#first">頂尖學術表現</a>
+        <a href="#inter">國際合作交流</a>
+        <a href="#social">深化社會貢獻</a>
+        <a href="#social">促進產業發展</a>
+      </div>
+
+      <div class="content" id="first">
+        <div>
+          <h2>
+            頂尖學術表現
+          </h2>
+  
+          <li>
+            鼓勵高影響力與開創性於國際領先之研究工作(烏鎮智庫於「全球人工智能發展報告」中，人工智慧領域，台大評為亞洲第一)
+          </li>
+          <li>
+            與相關領域之國際級中心合作，引領跨領域尖端研究課題
+          </li>
+          <li>
+            積極參與及主辦或協辦國際研究競賽以及國際研究社群活動
+          </li>
+        </div>
+      </div>
+
+      <div class="content" id="inter">
+        <div>
+          <h2>
+            國際合作交流
+          </h2>
+  
+          <li>
+            積極爭取旗艦型國際學術會議主辦權或主導權
+          </li>
+          <li>
+            邀請國際知名專家學者來台講學或訪問
+          </li>
+          <li>
+            簽訂相關交換與互訪協定，推動國際合作計畫
+          </li>
+          <li>
+            鼓勵師生前往國際級研究單位或產業界進行短期研究或實習
+          </li>
+        </div>
+      </div>
+
+      <div class="content"id="social">
+        <div>
+          <h2>
+            深化社會貢獻
+          </h2>
+    
+          <li>
+            為政府智庫推廣普及與應用相關技術於社會福利與關懷
+          </li>
+  
+          <li>
+            開發線上免費課程，提供海內外學子及社會人士進修
+          </li>
+
+        </div>
+      </div>
+
+      <div class="content" id="social">
+        <div>
+          <h2>
+            促進產業發展
+          </h2>
+  
+          <li>
+            鼓勵產學合作：定期舉辦短期課程、研討會、成果發表會、技術媒合會。
+          </li>
+  
+          <li>
+            與國內企業合組產學聯盟或產學合作中心
+          </li>
+          
+          <li>
+            鼓勵師生將研究成果商品化，以推動產業發展或扶植新創產業等
+          </li>
+        </div>
+      </div>
+    </div>
+
+    <div class="body display-none" id="contact">
+      <h1>
+        聯絡我們
+      </h1>
+      <div class="contact">
+        <iframe     
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7230.97446856062!2d121.5346237!3d25.0175339!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a989fe322ea9%3A0x21750404ee1d7f66!2z5ZyL56uL6Ie654Gj5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1694505768522!5m2!1szh-TW!2stw"
+          width="450"
+          height="450"
+          frameborder="0"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen=""
+        >
+        </iframe>
+
+        <div class="icon">
+          <div class="iconal">
+            <img src="images/icon1.png">
+            <p>
+              臺北市羅斯福路四段一號<br> 國立台灣大學 <br>數據智慧與系統研究中心
+            </p>
+          </div>
+          <div class="iconal">
+            <img src="images/icon2.png">
+            <p>
+              fanger@csie.ntu.edu.tw
+            </p>
+          </div>
+          <div class="iconal">
+            <img src="images/icon3.png">
+            <p>
+              林小姐 (02) 33664888 #226
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>     
+    
+
+
+  </div>
+  <div class="footer"></div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
