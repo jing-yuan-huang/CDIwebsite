@@ -11,8 +11,8 @@ html, body, p, h1, h2 {
 
 .navbar {
   width: 100vw;
-  height: 96px;
-  padding: 1.5rem 0;
+  height: 80px;
+  padding: 0.5rem  0;
   position: fixed;
   top: 0;
   z-index: 2;
@@ -37,7 +37,7 @@ html, body, p, h1, h2 {
   display: none;
   position: absolute !important;
   right: 1rem!important;
-  top: 3rem !important;
+  top: 2rem !important;
   font-size: 2rem;
   color: white;
   cursor: pointer;
@@ -90,11 +90,11 @@ html, body, p, h1, h2 {
 
   .link > div >a:hover {
     color: rgb(247, 247, 247);
-}
+  }
 
 .link > div.active > a {
   color: rgb(252, 252, 251);
-}
+  }
 
 
 
@@ -105,17 +105,6 @@ html, body, p, h1, h2 {
   border-bottom-color: rgba(192, 192, 192, 0.35);
   border-top-color: rgba(192, 192, 192, 0.35);
 }
-
-&.active {
-  .link {
-
-    display: flex;
-  }
-  .close-menu {
-    display: block;
-  }
-}
-
 
 .header {
   width: 100vw;
@@ -164,7 +153,7 @@ html, body, p, h1, h2 {
 
 .body {
   /* width: 100vw; */
-  width: 70%; /* RWD */
+  width: 80%; /* RWD */
   min-height: calc(100vh - 96px);
   padding: 5rem 0;
   box-sizing: border-box;
@@ -203,11 +192,25 @@ h2 {
   }
 }
 
+.tab2 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+
+  > a {
+    background-color: #88A4EC;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 4px 24px;
+  }
+}
+
 .content {
   display: flex;
   flex-direction: row;
-  width: 80%;
-  gap: 0.7rem;
+  width: 100%;
+  gap: 2rem;
   /* justify-content: space-between; */
   list-style-type: disc;
 
@@ -215,6 +218,7 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+    width: 60%;
 
     :first-child {
       margin-bottom: 0.5rem;
@@ -242,31 +246,11 @@ h2 {
 }
 
 .members {
-  width: fit-content;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin: 0 auto;
-
-  .member-tab {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: -2rem;
-    
-    > div {
-      padding: 1.5rem;
-      background-color: transparent;
-
-
-      > div:hover {
-        cursor: pointer;
-      }
-    }
-
-    .selected {
-      background-color: #E5F6FF;
-    }
-  }
 }
 
 .member-row {
@@ -275,46 +259,70 @@ h2 {
   flex-direction: row;
   gap: 1rem;
   margin: 0 auto;
+}
 
-  .group {
-    width: 100%;
+.group {
+  width: auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  background-color: #E5F6FF;
+}
+
+.list {
+  width: 100%;
+  /*display: grid;*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  
+  /*gap: 2rem;
+  grid-template-columns: repeat(5, 1fr);*/
+}
+
+.list .flex {
+  display: flex;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  max-width: 220px;
+}
+
+.profile a img {
+  width: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.member-tab {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -2rem;
+  
+  > div {
     padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
+    background-color: transparent;
+
+
+    > div:hover {
+      cursor: pointer;
+    }
+  }
+
+  .selected {
     background-color: #E5F6FF;
-
-    .list {
-      width: 100%;
-      display: grid;
-      /* display: flex;
-      flex-direction: row;
-      justify-content: space-between; */
-      gap: 2rem;
-      grid-template-columns: repeat(5, 1fr);
-    }
-
-    .list.flex {
-      display: flex;
-    }
-
-    .profile {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      align-items: center;
-
-      img {
-        aspect-ratio: 1/1;
-        object-fit: fill;
-      }
-    }
-
-    .title {
-      font-size: 1.5rem;
-      width: 100%;
-      text-align: center;
-    }
   }
 }
 
@@ -345,6 +353,7 @@ h2 {
 .contact {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 2rem;
   align-items: flex-end;
 
@@ -411,29 +420,117 @@ a:hover {
 
   }
 
-    .double-line{
+   .double-line{
       display: none;
-    }
+  }
 
-    .link {
+   .link {
       flex-direction: column;
       background:none;
       border-style: none;
       gap: 1rem;
-    }
+  }
   
    
-    .close-menu {
+  .close-menu {
       display: block; 
-    }
+  }
 
+  .member-row {
+    flex-direction: column !important;
+  }
+
+  .list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .profile{
+    max-width: 150px;
+  }
+
+  .profile a img {
+    width: 150px;
+  }
+
+  .tab{
+    gap: 1rem;
+  }
+
+  .tab2{
+    gap: 1rem;
+  }
+
+  h2{
+    font-size: 1.5rem !important;
+  }
+  .content img{
+    width: 200px;
+    height: auto;
+  }
+  
 
 }
+
+@media screen and (max-width:600px) {
+  .content{
+    flex-direction: column;
+    gap: 1rem;
+
+  > div{
+    width: 100%;
+
+  }
+  
+}
+
+.tab2{
+  flex-direction: column;
+  max-width: 300px;
+}
+}
+
+
 
 @media screen and (max-width: 360px) {
   .header .title #zh {
     font-size: 2.8rem !important;
   }
+
+  .tab >a{
+    padding: 4px 5px;
+  }
+  
+  .content{
+    width: 100%;
+  }
+
+  .group {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .list {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .highlight{
+    padding: 4px 10px;
+  }
+  .title{
+    font-size: 1.2rem;
+  }
+
+  .tab2{
+    max-width: 200px;
+  }
+
+  
+
+ 
+
+
 }
 
 
